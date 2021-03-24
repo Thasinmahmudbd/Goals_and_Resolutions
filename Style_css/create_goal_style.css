@@ -1,0 +1,37 @@
+/** form **/
+
+
+.form{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding-top:1rem;
+    grid-gap: .5rem;
+}
+
+.set_goals{
+    font-weight: bold;
+}
+
+.textarea_for_set_goals{
+    height: 15vh;
+    border: 1px solid coral;
+}
+
+.post_btn{
+    padding:.5rem;
+    background-color: coral;
+    color: #fff;
+    font-weight:bold;
+    border: 1px solid coral;
+    cursor:pointer;
+}
+
+/** note **/
+
+.note{
+    padding:1rem;
+    margin:.5rem 0rem;
+    background-color: #fff;
+    text-align: center;
+    font-size:1rem;
+}

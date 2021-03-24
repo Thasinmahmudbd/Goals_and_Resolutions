@@ -5,6 +5,7 @@
     <title>Goals and resolutions</title>
 
     <link rel="stylesheet" href="Style_css/index_style.css">
+    <link rel="stylesheet" href="Style_css/create_goal_style.css">
 
 </head>
 <body>
@@ -49,27 +50,23 @@
             
             <!-- headline-and-navbar-end -->
             
-            <!-- post-template-start -->
+            <!-- create-post-form-start -->
 
-            <div class="posts">
-
-                <div class="date">
-                    <p>Date</p>
-                </div>
-
-                <div class="goals">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel officia enim nemo quisquam quidem aut, natus esse earum iste.</p>
-                </div>
-
-                <div class="goals_status">
-                    <form action="index.html" method="post">
-                        <button class="complete_btn" type="submit" name="completed">Goal <br>Achived</button>
-                    </form>
-                </div>
-
+                <form class="form" action="">
+                    <label class="set_goals" for="post">Set Goals</label>
+                    <textarea class="textarea_for_set_goals" name="post" required id="post"></textarea>
+                    <button class="post_btn" type="submit" name="set">Set</button>                    
+                </form>
+            
+            <!-- create-post-form-end -->
+            
+            <!-- note_start -->
+            
+            <div class="note">
+                <p>You have 100 unachived goals!</p>
             </div>
             
-            <!-- post-template-end -->
+            <!-- note_start -->
 
         </div>
 
