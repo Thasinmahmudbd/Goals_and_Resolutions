@@ -1,0 +1,92 @@
+/* global */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: mont regular, sans-serif;
+    text-decoration: none;
+}
+
+/* index */
+
+/* body */
+
+.container {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+  margin-top: 15vh;
+  background-color: #eee;
+  border: 1px solid #000;
+}
+
+/* headline */
+
+.head_line {
+  padding: 1rem;
+  background-color: coral;
+}
+
+.head_line p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* section */
+
+.section {
+  padding: 1rem;
+}
+
+/* navbar */
+
+.links {
+  display: grid;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding-bottom:.8rem;
+  border-bottom: 1px solid coral;
+}
+
+.links div{
+  display: grid;
+  justify-content: center;
+}
+
+/* post */
+
+.posts{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 1rem 0rem;
+  background-color: #fff;
+  margin-bottom:1rem;
+}
+
+.posts div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals{
+  text-align: justify;
+  padding: 0rem .5rem;
+  line-height: 1.5rem;
+  border-left: 1px solid #000;
+}
+
+/* btns */
+
+.complete_btn{
+  background-color: #fff;
+  padding: .5rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: coral;
+  color: #fff;
+}
