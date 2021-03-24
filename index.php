@@ -8,6 +8,14 @@
 
 </head>
 <body>
+   
+   <!-- includes -->
+   
+   <?php
+    include"Includes/database_connection_inc.php";
+    
+    ?>
+   
     <div class="container">
 
         <div class="head_line">
