@@ -1,3 +1,12 @@
+<!-- including database connections  -->
+   
+<?php include"Includes/database_connection_inc.php"; ?>
+    
+<!-- including functions page -->
+    
+<?php include"Includes/functions_inc.php"; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +18,6 @@
 
 </head>
 <body>
-   
-   <!-- database-connections-start -->
-   
-   <?php include"Includes/database_connection_inc.php"; ?>
-    
-    <!-- database-connections-end -->
    
     <div class="container">
         
@@ -52,10 +55,10 @@
             
             <!-- create-post-form-start -->
 
-                <form class="form" action="">
+                <form class="form" action="actions.php" method="post">
                     <label class="set_goals" for="post">Set Goals</label>
-                    <textarea class="textarea_for_set_goals" name="post" required id="post"></textarea>
-                    <button class="post_btn" type="submit" name="set">Set</button>                    
+                    <textarea class="textarea_for_set_goals" name="goals" required id="goals"></textarea>
+                    <button class="post_btn" type="submit" name="set" id="set">Set</button>                    
                 </form>
             
             <!-- create-post-form-end -->

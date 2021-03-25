@@ -1,3 +1,13 @@
+
+
+<!-- including database connections  -->
+   
+<?php include"Includes/database_connection_inc.php"; ?>
+    
+<!-- including functions page -->
+    
+<?php include"Includes/functions_inc.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +18,6 @@
 
 </head>
 <body>
-   
-   <!-- database-connections-start -->
-   
-   <?php include"Includes/database_connection_inc.php"; ?>
-    
-    <!-- database-connections-end -->
    
     <div class="container">
         
