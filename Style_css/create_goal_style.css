@@ -24,13 +24,13 @@
     font-weight:bold;
     border: 1px solid coral;
     cursor:pointer;
+    margin-bottom:.5rem;
 }
 
 /** note **/
 
 .note{
     padding:1rem;
-    margin:.5rem 0rem;
     background-color: #fff;
     text-align: center;
     font-size:1rem;

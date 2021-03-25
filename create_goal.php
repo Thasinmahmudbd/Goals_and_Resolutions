@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="edit_delete">
-                    <a href="#">
+                    <a href="edit_goals.php">
                         <img src="Media/icons/Edit_100px.png" width="25px" alt="edit or delete">
                     </a>
                 </div>
@@ -66,7 +66,7 @@
                 <p>You have 100 unachived goals!</p>
             </div>
             
-            <!-- note_start -->
+            <!-- note_stop -->
 
         </div>
 

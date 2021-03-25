@@ -5,6 +5,8 @@
     <title>Goals and resolutions</title>
 
     <link rel="stylesheet" href="Style_css/index_style.css">
+    <link rel="stylesheet" href="Style_css/create_goal_style.css">
+    <link rel="stylesheet" href="Style_css/edit_goals_style.css">
 
 </head>
 <body>
@@ -49,7 +51,17 @@
             
             <!-- headline-and-navbar-end -->
             
-            <!-- post-template-start -->
+            <!-- create-post-form-start -->
+
+                <form class="form" action="">
+                    <label class="set_goals" for="post">Set Goals</label>
+                    <textarea class="textarea_for_set_goals" name="post" required id="post"></textarea>
+                    <button class="post_btn" type="submit" name="set">Set</button>                    
+                </form>
+            
+            <!-- create-post-form-end -->
+            
+            <!-- edit-post-template-start -->
 
             <div class="posts">
 
@@ -62,14 +74,15 @@
                 </div>
 
                 <div class="goals_status">
-                    <form action="index.html" method="post">
-                        <button class="complete_btn" type="submit" name="completed">Goal <br>Achived</button>
+                    <form action="action.php" method="post">
+                        <button class="edit_btn" type="submit" name="update">
+                        Edit</button>
                     </form>
                 </div>
 
             </div>
             
-            <!-- post-template-end -->
+            <!-- edit-post-template-end -->
 
         </div>
 
