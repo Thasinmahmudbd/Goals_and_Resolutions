@@ -6,12 +6,13 @@
     
 <?php include"Includes/functions_inc.php"; ?>
 
+<?php global $post_id; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Goals and resolutions</title>
+    <title>Edit Goals</title>
 
     <link rel="stylesheet" href="Style_css/index_style.css">
     <link rel="stylesheet" href="Style_css/create_goal_style.css">
@@ -61,38 +62,20 @@
             
             <!-- edit-post-form-start -->
 
-                <form class="form" action="">
-                    <label class="set_goals" for="post">Set Goals</label>
-                    <textarea class="textarea_for_set_goals" name="post" required id="post"></textarea>
-                    <button class="post_btn" type="submit" name="set">Set</button>                    
+                <form class="form" action="actions.php" method="post">
+                    <label class="set_goals" for="post">Edit Goals</label>
+                    <textarea class="textarea_for_set_goals" name="post" required id="post"><?php $post_id = fetchGoals(); ?></textarea>
+                    <input type="hidden" name="post_id" id="post_id" value=" <?php echo "$post_id"; ?> ">
+                    <button class="post_btn" type="submit" name="update">Update</button>                    
                 </form>
             
             <!-- edit-post-form-end -->
             
             <!-- edit-post-template-start -->
 
-            <div class="posts">
-
-                <div class="date">
-                    <p>Date</p>
-                </div>
-
-                <div class="goals">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel officia enim nemo quisquam quidem aut, natus esse earum iste.</p>
-                </div>
-
-                <div class="goals_status">
-                    <form action="action.php" method="post">
-                        <button class="edit_btn" type="submit" name="update">
-                        Edit</button>
-                    </form>
-                </div>
-
-            </div>
+            <?php showEditableGoals(); ?>
             
             <!-- edit-post-template-end -->
-
-        </div>
 
     </div>
 </body>

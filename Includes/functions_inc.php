@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Functions page</title>
+
 </head>
 <body>
     
@@ -82,7 +83,7 @@ global $connection;
 
     echo    "<div class='goals_status'>";
     echo        "<form action='index.html' method='post'>";
-    echo            "<button class='complete_btn' type='submit' name='completed'>Goal <br>Achived</button>";
+    echo            "<button class='complete_btn' type='submit' name='completed'>Goal <br>Achieved</button>";
     echo        "</form>";
     echo    "</div>";
 
@@ -90,6 +91,111 @@ global $connection;
 
 
         }
+}
+?>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<?php 
+// Function to show goals in the edit page with edit functionality.
+function showEditableGoals() {
+global $connection; 
+        
+        //Data read.
+        $read_post_data = "SELECT * FROM goals_table ORDER BY goals_id DESC;";
+    
+        $result = mysqli_query($connection, $read_post_data);
+        
+        while($row = mysqli_fetch_assoc($result)) {
+            
+            $post = $row['goals'];
+            $post_date = $row['date'];
+            $post_id = $row['goals_id'];
+
+//post template
+    echo "<div class='posts'>";
+
+    echo    "<div class='date'>";
+    echo        "<p>$post_date</p>";
+    echo    "</div>";
+
+    echo    "<div class='goals'>";
+    echo        "<p>$post</p>";
+    echo    "</div>";
+
+    echo    "<div class='goals_status'>";
+    echo            "<a class='edit_btn' href='edit_goals.php?p_id=$post_id'>Edit<a>";
+    echo    "</div>";
+
+    echo "</div>";
+
+        }
+
+}
+?>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<?php 
+// Function to put goals in the editor textarea.
+function fetchGoals() {
+global $connection; 
+
+if(isset($_GET['p_id'])){
+
+    $post_id = $_GET['p_id'];
+
+        //Data read.
+        $read_post_data_again = "SELECT * FROM goals_table WHERE goals_id = '$post_id';";
+
+        $result = mysqli_query($connection, $read_post_data_again);
+
+        while($row = mysqli_fetch_assoc($result)) {
+            
+            $post = $row['goals'];
+
+            echo "$post";
+
+            return $post_id;
+
+        }
+}
+}
+?>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<?php 
+// Function to update goals.
+function updateGoals() {
+global $connection; 
+    
+if(isset($_POST['update'])){
+    
+    // Getting data from form and storing in variables with SQL injection.
+        $goal_update = mysqli_real_escape_string( $connection,  $_POST['post'] );
+        $post_id = $_POST['post_id'];
+        
+        //Data update.
+        $update_post_data = "UPDATE goals_table SET goals = '$goal_update' WHERE goals_id = '$post_id';";
+                        
+        $update = mysqli_query($connection, $update_post_data);
+        
+        header("Location: edit_goals.php");
+
+}            
 }
 ?>
 <!---------------------------------------------------------------------------------------------------->

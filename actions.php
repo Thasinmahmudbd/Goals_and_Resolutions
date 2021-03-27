@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <!-- including database connections  -->
    
 <?php include"Includes/database_connection_inc.php"; ?>
@@ -17,7 +19,11 @@
     
     <!-- create post function call -->
     
-    <?php echo setGoals(); ?>
+    <?php setGoals(); ?>
+
+    <!-- create post edit function call -->
+    
+    <?php updateGoals(); ?>
     
 </body>
 </html>

@@ -74,7 +74,7 @@
 
                 <div class="goals_status">
                     <form action="index.html" method="post">
-                        <button class="complete_btn" type="submit" name="completed">Goal <br>Achived</button>
+                        <button class="complete_btn" type="submit" name="completed">Goal <br>Achieved</button>
                     </form>
                 </div>
 
