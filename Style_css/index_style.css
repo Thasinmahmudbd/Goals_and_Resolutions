@@ -4,7 +4,8 @@
   margin: 0px;
   padding: 0px;
   font-family: mont regular, sans-serif;
-    text-decoration: none;
+  text-decoration: none;
+  overflow-x: hidden;
 }
 
 /* index */
@@ -16,15 +17,47 @@
   height: 70vh;
   margin: auto;
   margin-top: 15vh;
-  background-color: #eee;
-  border: 1px solid #000;
+}
+
+/* white space */
+
+.whitespace{
+    padding-top: 113px;
+    width: 70vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+.top_whitespace{
+    position:fixed;
+    padding: 7.5vh;
+    width:100%;
+    background-color: #fff;
+    z-index: 4;
+    top: 0px;
+}
+
+.bottom_whitespace{
+    position:fixed;
+    padding: 7vh;
+    background-color: #fff;
+    border-top: .5rem solid #eee;
+    z-index: 4;
+    bottom: 0px;
+    left: 15vw;
+    right: 15vw;
 }
 
 /* headline */
 
 .head_line {
-  padding: 1rem;
+  width: 70vw;
+  margin: auto;
+  padding: 1rem 0rem;
   background-color: coral;
+  position:fixed;
+  z-index: 2;
 }
 
 .head_line p {
@@ -36,12 +69,20 @@
 /* section */
 
 .section {
-  padding: 1rem;
+  width: 70vw;
+  height: 70vh;
+  margin: auto; 
+  background-color: #eee;
+  position:fixed;
+  z-index: -2;
 }
 
 /* navbar */
 
 .links {
+  width: 70vw;
+  margin: auto;
+  margin-top: 70px;
   display: grid;
   align-items: center;
   align-self: center;
@@ -50,6 +91,8 @@
   grid-gap: 1rem;
   padding-bottom:.8rem;
   border-bottom: 1px solid coral;
+  position:fixed;
+  z-index: 2;
 }
 
 .links div{
@@ -59,12 +102,16 @@
 
 /* post */
 
+.post_whitespace{
+    padding-top: 120px;
+}
+
 .posts{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   padding: 1rem 0rem;
   background-color: #fff;
-  margin-bottom:1rem;
+  margin:0rem .5rem .5rem .5rem;
 }
 
 .posts div{
@@ -78,7 +125,12 @@
   padding: 0rem .5rem;
   line-height: 1.5rem;
   border-left: 1px solid #000;
-    font-size:1rem;
+  font-size:1rem;
+}
+
+.date{
+    font-size: .7rem;
+    text-align: center;
 }
 
 /* btns */
@@ -90,6 +142,6 @@
   border: 1px solid #fff;
   background-color: coral;
   color: #fff;
-    font-weight: bold;
-    border-radius: 50px;
+  font-weight: bold;
+  border-radius: 50px;
 }

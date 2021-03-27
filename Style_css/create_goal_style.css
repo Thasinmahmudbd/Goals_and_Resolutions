@@ -1,37 +1,38 @@
 /** form **/
 
-
-.form{
-    display:grid;
-    grid-template-columns: 1fr;
-    padding-top:1rem;
-    grid-gap: .5rem;
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  grid-gap: 0.5rem;
+  margin-top: 105px;
 }
 
-.set_goals{
-    font-weight: bold;
+.set_goals {
+  font-weight: bold;
 }
 
-.textarea_for_set_goals{
-    height: 15vh;
-    border: 1px solid coral;
+.textarea_for_set_goals {
+  height: 15vh;
+  border: 1px solid coral;
 }
 
-.post_btn{
-    padding:.5rem;
-    background-color: coral;
-    color: #fff;
-    font-weight:bold;
-    border: 1px solid coral;
-    cursor:pointer;
-    margin-bottom:.5rem;
+.post_btn {
+  padding: 0.5rem;
+  background-color: coral;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid coral;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 /** note **/
 
-.note{
-    padding:1rem;
-    background-color: #fff;
-    text-align: center;
-    font-size:1rem;
+.note {
+  padding: 1rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1rem;
 }

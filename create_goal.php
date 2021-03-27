@@ -22,14 +22,14 @@
     <div class="container">
         
         <!-- headline-and-navbar-start -->
+        
+        <div class="whitespace"><span></span></div>
 
         <div class="head_line">
             <p>Goals & Resolutions</p>
         </div>
 
-        <div class="section">
-           
-            <div class="links">
+        <div class="links">
 
                 <div class="view">
                     <a href="index.php">
@@ -49,9 +49,14 @@
                     </a>
                 </div>
 
-            </div>
+        </div>
             
-            <!-- headline-and-navbar-end -->
+        <!-- headline-and-navbar-end -->
+       
+        <div class="section">
+           
+            
+        </div>
             
             <!-- create-post-form-start -->
 

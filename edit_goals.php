@@ -23,14 +23,14 @@
     <div class="container">
         
         <!-- headline-and-navbar-start -->
+        
+        <div class="whitespace"><span></span></div>
 
         <div class="head_line">
             <p>Goals & Resolutions</p>
         </div>
 
-        <div class="section">
-           
-            <div class="links">
+        <div class="links">
 
                 <div class="view">
                     <a href="index.php">
@@ -50,11 +50,16 @@
                     </a>
                 </div>
 
-            </div>
+        </div>
             
-            <!-- headline-and-navbar-end -->
+        <!-- headline-and-navbar-end -->
+       
+        <div class="section">
+           
             
-            <!-- create-post-form-start -->
+        </div>
+            
+            <!-- edit-post-form-start -->
 
                 <form class="form" action="">
                     <label class="set_goals" for="post">Set Goals</label>
@@ -62,7 +67,7 @@
                     <button class="post_btn" type="submit" name="set">Set</button>                    
                 </form>
             
-            <!-- create-post-form-end -->
+            <!-- edit-post-form-end -->
             
             <!-- edit-post-template-start -->
 
