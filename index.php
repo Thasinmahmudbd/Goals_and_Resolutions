@@ -60,25 +60,6 @@
             
             <!-- post-template-start -->
             
-            <div class="post_whitespace"><span></span></div>
-
-            <div class="posts">
-
-                <div class="date">
-                    <p>Date</p>
-                </div>
-
-                <div class="goals">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel officia enim nemo quisquam quidem aut, natus esse earum iste.</p>
-                </div>
-
-                <div class="goals_status">
-                    <form action="index.html" method="post">
-                        <button class="complete_btn" type="submit" name="completed">Goal <br>Achieved</button>
-                    </form>
-                </div>
-
-            </div>
             <?php showGoals(); ?>
             
             <!-- post-template-end -->

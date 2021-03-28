@@ -69,6 +69,7 @@ global $connection;
             
             $post = $row['goals'];
             $post_date = $row['date'];
+            $post_id = $row['goals_id'];
 
 //post template
     echo "<div class='posts'>";
@@ -82,9 +83,7 @@ global $connection;
     echo    "</div>";
 
     echo    "<div class='goals_status'>";
-    echo        "<form action='index.html' method='post'>";
-    echo            "<button class='complete_btn' type='submit' name='completed'>Goal <br>Achieved</button>";
-    echo        "</form>";
+    echo        "<a class='complete_btn' href='actions.php?p_d=$post_id'>Goal<br>Achieved</a>";
     echo    "</div>";
 
     echo "</div>";
@@ -196,6 +195,32 @@ if(isset($_POST['update'])){
         header("Location: edit_goals.php");
 
 }            
+}
+?>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<?php 
+// Function to update goals.
+function deleteGoals() {
+global $connection; 
+    
+        if(isset($_GET['p_d'])){
+        
+        $post_id_delete = $_GET['p_d'];
+        
+        //Data delete
+        $delete_post_data = "DELETE FROM goals_table WHERE goals_id = $post_id_delete ;";
+        
+        mysqli_query($connection, $delete_post_data);
+        
+        header("Location: index.php");
+        
+        }
 }
 ?>
 <!---------------------------------------------------------------------------------------------------->

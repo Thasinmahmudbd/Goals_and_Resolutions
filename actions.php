@@ -21,9 +21,13 @@
     
     <?php setGoals(); ?>
 
-    <!-- create post edit function call -->
+    <!-- post edit function call -->
     
     <?php updateGoals(); ?>
+    
+    <!-- post delete function call -->
+    
+    <?php deleteGoals(); ?>
     
 </body>
 </html>
