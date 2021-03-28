@@ -70,14 +70,11 @@
             
             <!-- note_start -->
             
-            <div class="note">
-                <p>You have 100 unachived goals!</p>
-            </div>
+            <?php countGoals(); ?>
             
             <!-- note_stop -->
 
-        </div>
-
     </div>
+    
 </body>
 </html>

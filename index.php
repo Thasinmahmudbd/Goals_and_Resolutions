@@ -60,6 +60,8 @@
             
             <!-- post-template-start -->
             
+            <div class="post_whitespace"></div>
+            
             <?php showGoals(); ?>
             
             <!-- post-template-end -->
