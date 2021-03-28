@@ -1,0 +1,41 @@
+.personal_info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding:1rem;
+    font-size:.8rem;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+.image{
+    display: grid;
+    justify-self: center;
+}
+
+.profile_image{
+    width: 150px;
+    border-radius: 100%;
+}
+
+.info{
+    display: grid;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.box{
+    background: #fff;
+    padding: 1rem;
+}
+.table{
+    border:1px solid coral;
+}
+th{
+    padding: .5rem;
+    border:1px solid coral;
+}
+td{
+    padding: .5rem;
+    border:1px solid coral;
+}

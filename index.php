@@ -23,50 +23,21 @@
         
         <!-- headline-and-navbar-start -->
         
-        <div class="whitespace"><span></span></div>
-
-        <div class="head_line">
-            <p>Goals & Resolutions</p>
-        </div>
-
-        <div class="links">
-
-                <div class="view">
-                    <a href="index.php">
-                        <img src="Media/icons/Eye_100px.png" width="25px" alt="view">
-                    </a>
-                </div>
-
-                <div class="create">
-                   <a href="create_goal.php">
-                       <img src="Media/icons/Create_104px.png" width="25px" alt="create">
-                   </a>
-                </div>
-
-                <div class="edit_delete">
-                    <a href="edit_goals.php">
-                        <img src="Media/icons/Edit_100px.png" width="25px" alt="edit or delete">
-                    </a>
-                </div>
-
-        </div>
+        <!-- including headline and navbar -->
+    
+        <?php include"Includes/headline_and_navbar_inc.php"; ?>
             
         <!-- headline-and-navbar-end -->
-       
-        <div class="section">
-           
             
-        </div>
+        <!-- post-template-start -->
             
-            <!-- post-template-start -->
+        <div class="post_whitespace"></div>
             
-            <div class="post_whitespace"></div>
+        <?php showGoals(); ?>
             
-            <?php showGoals(); ?>
-            
-            <!-- post-template-end -->
+        <!-- post-template-end -->
 
-        </div>
+    </div>
         
         <div class="top_whitespace"></div>
         <div class="bottom_whitespace"></div>

@@ -23,56 +23,27 @@
         
         <!-- headline-and-navbar-start -->
         
-        <div class="whitespace"><span></span></div>
-
-        <div class="head_line">
-            <p>Goals & Resolutions</p>
-        </div>
-
-        <div class="links">
-
-                <div class="view">
-                    <a href="index.php">
-                        <img src="Media/icons/Eye_100px.png" width="25px" alt="view">
-                    </a>
-                </div>
-
-                <div class="create">
-                   <a href="create_goal.php">
-                       <img src="Media/icons/Create_104px.png" width="25px" alt="create">
-                   </a>
-                </div>
-
-                <div class="edit_delete">
-                    <a href="edit_goals.php">
-                        <img src="Media/icons/Edit_100px.png" width="25px" alt="edit or delete">
-                    </a>
-                </div>
-
-        </div>
+        <!-- including headline and navbar -->
+    
+        <?php include"Includes/headline_and_navbar_inc.php"; ?>
             
         <!-- headline-and-navbar-end -->
-       
-        <div class="section">
-           
             
-        </div>
-            
-            <!-- create-post-form-start -->
+        <!-- create-post-form-start -->
 
-                <form class="form" action="actions.php" method="post">
-                    <label class="set_goals" for="post">Set Goals</label>
-                    <textarea class="textarea_for_set_goals" name="goals" required id="goals"></textarea>
-                    <button class="post_btn" type="submit" name="set" id="set">Set</button>                    
-                </form>
+            <form class="form" action="actions.php" method="post">
+                <label class="set_goals" for="post">Set Goals</label>
+                <textarea class="textarea_for_set_goals" name="goals" required id="goals"></textarea>
+                <button class="post_btn" type="submit" name="set" id="set">Set</button>                    
+            </form>
             
-            <!-- create-post-form-end -->
+        <!-- create-post-form-end -->
             
-            <!-- note_start -->
+        <!-- note_start -->
             
-            <?php countGoals(); ?>
+        <?php countGoals(); ?>
             
-            <!-- note_stop -->
+        <!-- note_stop -->
 
     </div>
     

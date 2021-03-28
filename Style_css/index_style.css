@@ -52,6 +52,8 @@
 /* headline */
 
 .head_line {
+  display: grid;
+  grid-template-columns: 35px 5fr 35px;
   width: 70vw;
   margin: auto;
   padding: 1rem 0rem;
@@ -64,6 +66,7 @@
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* section */
